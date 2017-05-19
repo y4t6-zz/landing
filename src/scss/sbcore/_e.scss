@@ -1,12 +1,19 @@
 @import '../_vars';
 @import '_m';
 
+.c {
+	margin: 0 auto;
+	width: 100%;
+	max-width: $max-width;
+	position: relative;
+	z-index: 2000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .clearfix {
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
+	content: '';
+	display: table;
+	clear: both;
 }
 .border {
 	border: 1px solid red;
@@ -23,9 +30,4 @@
 }
 .gpr {
 	padding-right: 20px;
-}
-
-.footer-h3 {
-	font-size: 16px;
-	color: #544f4d;
 }

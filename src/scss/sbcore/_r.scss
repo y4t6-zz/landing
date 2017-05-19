@@ -9,6 +9,9 @@ html, body {
   height: auto;
   font-family: 'Roboto';
 }
+body {
+    font-size: 16px;
+}
 div, h1, h2, h3, h4, h5, h6, ul, ol, li, a, p, span {
   position: relative;
   margin: 0;

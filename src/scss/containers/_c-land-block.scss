@@ -49,6 +49,9 @@
                 min-height: auto;
             }
         }
+        p {
+            font-size: $f4;
+        }
     }
     &--grey {
         background-color: $block-bg-grey;

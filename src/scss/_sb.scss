@@ -4,3 +4,54 @@
         display: block;
     }
 }
+.sb-graph {
+    padding-left: $content-padding-left;
+    &__list {
+        border: 1px solid $main-color;
+    }
+}
+.sb-description {
+    text-align: right;
+    padding-top: $content-up + $circle-down;
+    p {
+        font-size: $f2;
+    }
+}
+.sb-button {
+    $padding-x: 48px;
+    $height: 60px;
+    display: inline-block;
+    border-radius: $height/2;
+    color: white;
+    font-weight: 600;
+    font-size: $f2;
+    background-color: $second-color;
+    height: $height;
+    line-height: $height;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    cursor: pointer;
+    text-align: center;
+}
+.sb-ul {
+    li {
+        p {
+            font-size: $f3;
+            b {
+                font-size: $f2;
+            }
+        }
+    }
+}
+.sb-cards {
+    text-align: center;
+    font-size: 0;
+    li {
+        display: inline-block;
+        width: 33.33333%;
+        text-align: center;
+        p {
+            font-size: $f3;
+        }
+    }
+}
