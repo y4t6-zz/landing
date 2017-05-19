@@ -1,0 +1,31 @@
+.l-logo-wrap {
+    &.c-land-content {
+        font-size: 0;
+        padding-top: 40px;
+    }
+}
+.l-top-circle-wrap {
+    &.c-land-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        img {
+            position: absolute;
+            right: 0;
+            bottom: -70px;
+            border-radius: 200px;
+        }
+    }
+}
+.l-h2-wrap-right {
+    h2 {
+        float: right;
+        text-align: right;
+    }
+}
+.l-h2-wrap-big {
+    h2 {
+        max-width: 100%;
+    }
+}

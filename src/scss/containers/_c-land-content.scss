@@ -1,0 +1,24 @@
+.c-land-content {
+    h2 {
+        max-width: 50%;
+    }
+    &:after {
+        @extend .clearfix;
+    }
+    &__item {
+        float: left;
+        width: 100%;
+        &--half {
+            width: 50%;
+        }
+        &--big {
+            width: 55%;
+        }
+        &--small {
+            width: 45%;
+        }
+    }
+}
+*[class*="c-land-content"] {
+    border: 1px solid black;
+}
