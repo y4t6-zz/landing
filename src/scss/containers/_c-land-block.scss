@@ -1,0 +1,59 @@
+.c-land-block {
+    padding-bottom: $block-padding-bottom;
+    &__center {
+        @extend .c;
+    }
+    &__inner {
+        position: relative;
+        border: 1px solid red;
+    }
+    &__triangle {
+        $height: 100px;
+        position: absolute;
+        top: 1px;
+        height: $height;
+        width: 100%;
+        margin-top: -$height;
+        img {
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &--header {
+        padding-bottom: 0;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: grey;
+        }
+        .c-land-block {
+            &__inner {
+                min-height: 400px;
+            }
+        }
+    }
+    &--above-footer {
+        padding-bottom: $block-padding-bottom-small;
+    }
+    &--footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .c-land-block {
+            &__inner {
+                min-height: auto;
+            }
+        }
+    }
+    &--grey {
+        background-color: $block-bg-grey;
+    }
+}
+*[class*="c-land-block"] {
+    border: 1px solid pink;
+}

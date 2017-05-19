@@ -1,4 +1,9 @@
+// paddings
+$block-padding-bottom: 80px;
+$block-padding-bottom-small: 40px;
 
+// backgrounds
+$block-bg-grey: #f5f5f5;
 
 /*********************
 spacer
@@ -89,5 +94,5 @@ width for center blocks
  ---------------------------------------------------
 
 */
-$max-width:           1010px;
+$max-width:           1200px;
 $max-width-inside:    800px;
