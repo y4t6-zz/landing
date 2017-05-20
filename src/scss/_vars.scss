@@ -2,6 +2,7 @@
 $block-padding-bottom: 80px;
 $block-padding-bottom-small: 40px;
 $content-padding-left: 100px;
+$content-padding-left-ad: 50px;
 
 // backgrounds
 $block-bg-grey: #f5f5f5;
@@ -11,17 +12,24 @@ $main-color: #1d3572;
 $second-color: #d8232a;
 
 // font sizes
-$f1: 40px;
-$f2: 24px;
-$f3: 18px;
-$f4: 11px;
+$font-size: 16px;
+$f1: 2.5em; // 40px
+$f2: 1.5em; // 24px
+$f3: 1.13em; // 18px
+$f4: 0.7em; // 11px
+
 
 // font colors
 $text-color: #545454;
 
 // other
 $content-up: 35px;
+$content-up-mob: 10px;
 $circle-down: 70px;
+
+// transitions
+$transition-hover: 0.3s;
+$transition: 0.1s;
 
 
 /*********************
@@ -35,7 +43,7 @@ $spacer:              5px;
 grid-system
 *********************/
 
-$gridSystem:          25, 50, 100;
+// $gridSystem:          25, 50, 100;
 
 
 /*********************
@@ -83,9 +91,9 @@ $gridSystem:          25, 50, 100;
 */
 $a1:                  500px;
 
-$b:                   640px;
-$c:                   1100px;
-$d:                   1250px;
+$b:                   900px;
+$c:                   1000px;
+$d:                   1200px;
 
 $e1:                  1700px;
 

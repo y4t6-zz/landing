@@ -1,14 +1,33 @@
 .sb-logo {
     display: inline-block;
+    @include ad() {
+		width: 270px;
+	}
     img {
         display: block;
     }
 }
 .sb-graph {
     padding-left: $content-padding-left;
+    @include ab() {
+        max-width: 500px;
+    }
+    &--light {
+        @extend .sb-graph-padding-left-light;
+        @include ab() {
+            padding-left: 40px !important;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
     &__item {
         &:not(:last-child) {
             margin-bottom: 15px;
+        }
+        transition: $transition;
+        &:hover {
+            width: 100% !important;
+            transition: $transition-hover;
         }
     }
     &__top {
@@ -18,7 +37,7 @@
             color: $second-color;
             font-size: $f2;
             b {
-                font-size: 30px;
+                font-size: 1.2em;
             }
         }
         div {
@@ -74,6 +93,9 @@
     text-align: right;
     padding-top: $content-up + $circle-down;
     padding-left: 60px;
+    @include ab() {
+        padding-bottom: 40px;
+    }
     p {
         font-size: $f2;
         line-height: 38px;
@@ -95,6 +117,10 @@
     padding-right: $padding-x;
     cursor: pointer;
     text-align: center;
+    @include ab() {
+        height: $height - 8;
+        line-height: $height - 10;
+    }
 }
 .sb-ul {
     li {
@@ -141,9 +167,20 @@
         padding-left: 30px;
         padding-right: 30px;
         box-sizing: border-box;
+        @extend .font-size;
         p {
             margin-top: 15px;
             font-size: $f3;
+            a {
+                color: inherit;
+                text-decoration: none;
+                border-bottom: 1px solid rgba($text-color, 0.5);
+                transition: $transition;
+                &:hover {
+                    border-bottom: 1px solid transparent;
+                    transition: $transition-hover;
+                }
+            }
         }
     }
 }

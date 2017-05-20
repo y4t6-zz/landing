@@ -1,17 +1,29 @@
 .c-land-content {
+    color: $text-color;
+    &:last-child {
+        h2 {
+            margin-bottom: 0;
+        }
+    }
     &--up {
         top: -$content-up;
+        @include ab() {
+            top: $content-up-mob;
+        }
     }
-    color: $text-color;
     h2 {
         max-width: 50%;
         font-size: $f1;
         font-weight: 300;
+        @include ab() {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
     }
     h3 {
         font-size: $f2;
-        padding-left: $content-padding-left;
         margin-bottom: 30px;
+        @extend .content-padding-left;
     }
     img {
         max-width: 100%;
@@ -27,12 +39,24 @@
         }
         &--big {
             width: 55%;
+            @include ac() {
+                width: 50%;
+            }
+            @include ab() {
+                width: 100%;
+            }
         }
         &--small {
             width: 45%;
+            @include ac() {
+                width: 50%;
+            }
+            @include ab() {
+                width: 100%;
+            }
         }
         &--padding-left {
-            padding-left: $content-padding-left;
+            @extend .content-padding-left;
         }
     }
 }

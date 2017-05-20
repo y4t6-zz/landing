@@ -8,11 +8,17 @@
     }
     &__triangle {
         $height: 100px;
+        $height-mob: 40px;
         position: absolute;
         top: 1px;
         height: $height;
         width: 100%;
         margin-top: -$height;
+        pointer-events: none;
+        @include ab() {
+            height: $height-mob;
+            margin-top: -$height-mob;
+        }
         img {
             max-width: 100%;
             height: 100%;
@@ -38,6 +44,9 @@
         .c-land-block {
             &__inner {
                 min-height: 400px;
+                @include ab() {
+                    min-height: 300px;
+                }
             }
         }
     }

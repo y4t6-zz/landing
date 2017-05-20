@@ -15,6 +15,12 @@
             right: 0;
             bottom: -$circle-down;
             border-radius: 200px;
+            @include ad() {
+        		width: 250px;
+        	}
+            @include ab() {
+                width: 30%;
+            }
         }
     }
 }
@@ -31,4 +37,14 @@
 }
 .l-button-right {
     text-align: right;
+}
+.l-top-group-mobile {
+    @include ab() {
+        .c-land-content__item:nth-child(1) {
+            width: 70%;
+        }
+        .sb-description {
+            padding-top: 20px;
+        }
+    }
 }
