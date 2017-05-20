@@ -6,6 +6,11 @@
 }
 .sb-graph {
     padding-left: $content-padding-left;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
     &__top {
         text-align: center;
         padding-bottom: 8px;
@@ -68,6 +73,7 @@
 .sb-description {
     text-align: right;
     padding-top: $content-up + $circle-down;
+    padding-left: 60px;
     p {
         font-size: $f2;
         margin-top: 30px;
@@ -115,6 +121,7 @@
         }
         p {
             font-size: $f3;
+            line-height: 30px;
             b {
                 font-size: $f2;
                 color: $second-color;
