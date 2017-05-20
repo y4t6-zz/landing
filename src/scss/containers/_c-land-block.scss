@@ -21,6 +21,9 @@
     }
     &--header {
         padding-bottom: 0;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
         &:before {
             content: '';
             display: block;
