@@ -2,9 +2,11 @@
     &--up {
         top: -$content-up;
     }
+    color: $text-color;
     h2 {
         max-width: 50%;
         font-size: $f1;
+        font-weight: 300;
     }
     h3 {
         font-size: $f2;

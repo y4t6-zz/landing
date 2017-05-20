@@ -6,8 +6,63 @@
 }
 .sb-graph {
     padding-left: $content-padding-left;
-    &__list {
-        border: 1px solid $main-color;
+    &__top {
+        text-align: center;
+        padding-bottom: 8px;
+        p {
+            color: $second-color;
+            font-size: $f2;
+            b {
+                font-size: 30px;
+            }
+        }
+        div {
+            height: 8px;
+            border: 1px solid black;
+            border-bottom: none;
+        }
+    }
+    &__lines-title {
+        position: absolute;
+        left: 0;
+        p {
+            position: absolute;
+            right: 0;
+            width: $content-padding-left;
+            text-align: right;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 15px;
+            white-space: nowrap;
+            color: black;
+        }
+    }
+    &__line-wrap {
+        $right-line-width: 120px;
+        position: relative;
+        &--left {
+            padding-right: $right-line-width;
+            .sb-graph__line {
+                background-color: $main-color;
+            }
+        }
+        &--right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $right-line-width;
+            padding-left: 15px;
+            .sb-graph__line {
+                background-color: $second-color;
+            }
+        }
+    }
+    &__line {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        height: 36px;
+        line-height: 36px;
     }
 }
 .sb-description {
