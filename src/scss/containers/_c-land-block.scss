@@ -5,7 +5,6 @@
     }
     &__inner {
         position: relative;
-        border: 1px solid red;
     }
     &__triangle {
         $height: 100px;
@@ -58,5 +57,5 @@
     }
 }
 *[class*="c-land-block"] {
-    border: 1px solid pink;
+    //border: 1px solid pink;
 }

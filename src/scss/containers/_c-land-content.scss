@@ -1,6 +1,6 @@
 .c-land-content {
     &--up {
-        margin-top: -$content-up;
+        top: -$content-up;
     }
     h2 {
         max-width: 50%;
@@ -9,6 +9,7 @@
     h3 {
         font-size: $f2;
         padding-left: $content-padding-left;
+        margin-bottom: 20px;
     }
     img {
         max-width: 100%;
@@ -34,5 +35,5 @@
     }
 }
 *[class*="c-land-content"] {
-    border: 1px solid black;
+    //border: 1px solid black;
 }
