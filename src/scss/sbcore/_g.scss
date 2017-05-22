@@ -9,16 +9,16 @@
 [class*="col-"] {
 	float: left;
 }
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
 	@include be() {
-		.g-mt-#{$i} {
-	 	   margin-top: $spacer * $i !important;
+		.g-mb-#{$i} {
+	 	   margin-bottom: $spacer * $i !important;
 	    }
 	}
 }
 @for $i from 1 through 10 {
-	@include be() {
-		.g-mb-#{$i} {
+	@include ab() {
+		.g-mb-ab-#{$i} {
 	 	   margin-bottom: $spacer * $i !important;
 	    }
 	}

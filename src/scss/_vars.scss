@@ -1,6 +1,13 @@
+// font-size
+$proximaNovaRg: 'ProximaNovaRg', Helvetica, Arial, sans-serif;
+//$proximaNovaBold: 'ProximaNovaBold', Helvetica, Arial, sans-serif;
+$proximaNovaSemibold: 'ProximaNovaSemibold', Helvetica, Arial, sans-serif;
+$proximaNovaLt: 'ProximaNovaLt', Helvetica, Arial, sans-serif;
+
+
 // paddings
-$block-padding-bottom: 80px;
-$block-padding-bottom-small: 40px;
+$block-padding-bottom: 90px;
+$block-padding-bottom-small: 80px;
 $content-padding-left: 100px;
 $content-padding-left-ad: 50px;
 
@@ -89,7 +96,7 @@ grid-system
 | -------|+++++++++++++++++++++|-----------      @include p1() { ... }										 |
 *------------------------------------------------------------------------------------------------------------*
 */
-$a1:                  500px;
+$a1:                  670px;
 
 $b:                   900px;
 $c:                   1000px;
@@ -98,7 +105,6 @@ $d:                   1200px;
 $e1:                  1700px;
 
 $p1:                  630px, 1000px;
-
 
 /*********************
 width for center blocks

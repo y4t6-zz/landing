@@ -3,6 +3,9 @@
     @include ad() {
 		width: 270px;
 	}
+    @include a1() {
+        width: 220px;
+    }
     img {
         display: block;
     }
@@ -25,10 +28,10 @@
             margin-bottom: 15px;
         }
         transition: $transition;
-        &:hover {
-            width: 100% !important;
-            transition: $transition-hover;
-        }
+        // &:hover {
+        //     width: 100% !important;
+        //     transition: $transition-hover;
+        // }
     }
     &__top {
         text-align: center;
@@ -36,6 +39,7 @@
         p {
             color: $second-color;
             font-size: $f2;
+            font-family: $proximaNovaSemibold;
             b {
                 font-size: 1.2em;
             }
@@ -49,21 +53,24 @@
     &__lines-title {
         position: absolute;
         left: 0;
+        top: 2px;
         p {
             position: absolute;
             right: 0;
             width: $content-padding-left;
             text-align: right;
-            font-size: 12px;
-            font-weight: bold;
+            font-size: 13px;
+            font-weight: 600;
             margin-right: 15px;
             white-space: nowrap;
             color: black;
+            font-family: $proximaNovaSemibold;
         }
     }
     &__line-wrap {
         $right-line-width: 120px;
         position: relative;
+        font-family: $proximaNovaRg;
         &--left {
             padding-right: $right-line-width;
             .sb-graph__line {
@@ -98,18 +105,21 @@
     }
     p {
         font-size: $f2;
-        line-height: 38px;
+        line-height: $f2 + 0.2;
         margin-top: 30px;
+        b {
+            font-family: $proximaNovaSemibold;
+        }
     }
 }
 .sb-button {
+    font-family: $proximaNovaRg;
+    font-size: $f2;
     $padding-x: 48px;
     $height: 60px;
     display: inline-block;
     border-radius: $height/2;
     color: white;
-    font-weight: 600;
-    font-size: $f2;
     background-color: $second-color;
     height: $height;
     line-height: $height - 2;
@@ -125,6 +135,7 @@
 .sb-ul {
     li {
         padding-left: 40px;
+        font-size: $font-size;
         div {
             position: absolute;
             left: 0;
@@ -148,9 +159,10 @@
         }
         p {
             font-size: $f3;
-            line-height: 30px;
+            line-height: $f3 + 0.4;
             b {
-                font-size: $f2;
+                font-size: $f3 + 0.2;
+                font-family: $proximaNovaSemibold;
                 color: $second-color;
             }
         }
@@ -168,9 +180,20 @@
         padding-right: 30px;
         box-sizing: border-box;
         @extend .font-size;
+        @include ab() {
+            width: 50%;
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+        @include a1() {
+            width: 100%;
+        }
+        font-size: $font-size;
         p {
             margin-top: 15px;
             font-size: $f3;
+            line-height: $f3 + 0.4;
             a {
                 color: inherit;
                 text-decoration: none;

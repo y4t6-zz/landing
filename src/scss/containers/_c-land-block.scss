@@ -7,12 +7,12 @@
         position: relative;
     }
     &__triangle {
-        $height: 100px;
+        $height: 120px;
         $height-mob: 40px;
         position: absolute;
-        top: 1px;
+        top: 2px;
+        left: -1px;
         height: $height;
-        width: 100%;
         margin-top: -$height;
         pointer-events: none;
         @include ab() {
@@ -23,6 +23,7 @@
             max-width: 100%;
             height: 100%;
             width: 100%;
+            pointer-events: none;
         }
     }
     &--header {
@@ -38,12 +39,15 @@
             left: 0;
             bottom: 0;
             right: 0;
-            opacity: 0.64;
-            background-image: linear-gradient(307deg, rgba(0, 0, 0, 0), #1d3572);;
+            opacity: 0.5;
+            background-image: linear-gradient(307deg, rgba(0, 0, 0, 0), #1d3572);
         }
         .c-land-block {
             &__inner {
                 min-height: 480px;
+                @include ad() {
+                    min-height: 400px;
+                }
                 @include ab() {
                     min-height: 300px;
                 }

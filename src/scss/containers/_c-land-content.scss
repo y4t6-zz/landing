@@ -11,16 +11,24 @@
             top: $content-up-mob;
         }
     }
+    &.is-hidden {
+        display: none;
+    }
     h2 {
-        max-width: 50%;
+        font-family: $proximaNovaLt;
+        font-weight: 200;
         font-size: $f1;
-        font-weight: 300;
+        max-width: 50%;
         @include ab() {
             max-width: 100%;
             margin-bottom: 40px;
         }
+        @include a1() {
+            font-size: $f1 - 0.3;
+        }
     }
     h3 {
+        font-family: $proximaNovaSemibold;
         font-size: $f2;
         margin-bottom: 30px;
         @extend .content-padding-left;
