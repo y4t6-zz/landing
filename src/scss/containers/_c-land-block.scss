@@ -43,7 +43,7 @@
         }
         .c-land-block {
             &__inner {
-                min-height: 400px;
+                min-height: 480px;
                 @include ab() {
                     min-height: 300px;
                 }
